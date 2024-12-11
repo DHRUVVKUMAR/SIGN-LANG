@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project - Sign Language Recognition</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+            </nav>
+        </header>
+
+        <main>
+            <h1>Sign Language Recognition</h1>
+            
+            <div class="project-content">
+                <section class="recognition-interface">
+                    <h2>Recognition Interface</h2>
+                    <div class="video-feed">
+                        <p>Camera feed will appear here</p>
+                    </div>
+                    <div class="recognition-controls">
+                        <p>Detected Sign: <span id="detected-sign">None</span></p>
+                        <button id="start-recognition">Start Recognition</button>
+                    </div>
+                </section>
+
+                <section class="get-started" id="get-started">
+                    <h2>Get Started</h2>
+                    <p>Follow these steps to begin using the sign language recognition system:</p>
+                    <ol>
+                        <li>Ensure your camera is connected and working</li>
+                        <li>Position yourself in front of the camera</li>
+                        <li>Click the "Start Recognition" button</li>
+                        <li>Perform sign language gestures</li>
+                        <li>View the detected signs in real-time</li>
+                    </ol>
+                    <button id="tutorial-button">Tutorial</button>
+                </section>
+            </div>
+
+            <p id="scroll-instruction">Scroll right for instructions</p>
+        </main>
+    </div>
+    <script src="project.js"></script>
+</body>
+</html>

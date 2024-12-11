@@ -1,0 +1,74 @@
+.project-content {
+    display: flex;
+    gap: 40px;
+    overflow-x: auto;
+    padding-bottom: 20px;
+    scroll-snap-type: x mandatory;
+}
+
+.recognition-interface,
+.get-started {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+}
+
+.video-feed {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.recognition-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#start-recognition,
+#tutorial-button {
+    background-color: white;
+    color: #4a00e0;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#start-recognition:hover,
+#tutorial-button:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.get-started {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.get-started ol {
+    margin-bottom: 20px;
+}
+
+#scroll-instruction {
+    text-align: right;
+    margin-top: 20px;
+    font-style: italic;
+    opacity: 0.7;
+}
+
+@media (min-width: 768px) {
+    .project-content {
+        flex-wrap: nowrap;
+    }
+
+    .recognition-interface,
+    .get-started {
+        flex: 0 0 calc(50% - 20px);
+    }
+}
